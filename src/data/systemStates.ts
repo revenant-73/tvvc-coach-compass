@@ -1,27 +1,29 @@
-export const systemStates = [
+import { SystemStateOption } from '../types'
+
+export const systemStates: SystemStateOption[] = [
   {
     id: 'clarity',
-    title: 'We need clarity',
-    hint: 'When the problem is unclear or roles are confused'
+    label: 'We need clarity',
+    description: 'Perception, decisions, or communication is foggy'
   },
   {
     id: 'challenge',
-    title: 'We need challenge',
-    hint: 'When things feel too easy or predictable'
+    label: 'We need challenge',
+    description: 'The team is in a groove but may be cruising'
   },
   {
     id: 'connection',
-    title: 'We need connection',
-    hint: 'When the group is fragmented or isolated'
+    label: 'We need connection',
+    description: 'Energy, communication, or spacing feels fragmented'
   },
   {
     id: 'stability',
-    title: 'We need stability',
-    hint: 'When everything feels chaotic or unpredictable'
+    label: 'We need stability',
+    description: 'Errors, collapses, or panic are happening too fast'
   },
   {
     id: 'flow',
-    title: 'We need flow',
-    hint: 'When the pace feels off or energy is mismatched'
-  },
+    label: 'We need flow',
+    description: 'Rhythm is choppy; play lacks continuity'
+  }
 ]

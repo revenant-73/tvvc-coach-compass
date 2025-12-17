@@ -1,0 +1,77 @@
+.context-selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.selector-header {
+  text-align: center;
+}
+
+.selector-header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.selector-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text);
+  margin: 0;
+}
+
+.context-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.team-section {
+  background-color: var(--charcoal-panel);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+}
+
+.team-label {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--tvvc-teal);
+  margin-bottom: var(--spacing-md);
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+}
+
+.moment-button {
+  padding: var(--spacing-md);
+  background-color: var(--midnight-black);
+  border: 1.5px solid var(--divider);
+  border-radius: 6px;
+  color: var(--primary-text);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.moment-button:hover {
+  border-color: var(--tvvc-teal);
+  color: var(--tvvc-teal);
+}
+
+.moment-button:active {
+  background-color: var(--tvvc-teal);
+  border-color: var(--tvvc-teal);
+  color: var(--midnight-black);
+}
+
+@media (max-width: 640px) {
+  .moments-grid {
+    grid-template-columns: 1fr;
+  }
+}

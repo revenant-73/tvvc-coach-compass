@@ -1,0 +1,41 @@
+.outcome-selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+}
+
+.outcome-button {
+  padding: var(--spacing-md);
+  background-color: var(--charcoal-panel);
+  border: 1.5px solid var(--divider);
+  border-radius: 8px;
+  color: var(--primary-text);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.outcome-button:hover {
+  border-color: var(--tvvc-teal);
+  background-color: rgba(31, 182, 178, 0.05);
+}
+
+.outcome-button:active {
+  background-color: var(--tvvc-teal);
+  border-color: var(--tvvc-teal);
+  color: var(--midnight-black);
+}
+
+@media (max-width: 640px) {
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+}

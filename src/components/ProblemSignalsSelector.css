@@ -1,0 +1,86 @@
+.problem-signals-selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.signals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+}
+
+.signal-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--charcoal-panel);
+  border: 1.5px solid var(--divider);
+  border-radius: 8px;
+  color: var(--primary-text);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.signal-button:hover {
+  border-color: var(--tvvc-teal);
+  background-color: rgba(31, 182, 178, 0.05);
+}
+
+.signal-button.selected {
+  background-color: var(--tvvc-teal);
+  border-color: var(--tvvc-teal);
+  color: var(--midnight-black);
+}
+
+.signal-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid currentColor;
+  border-radius: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+}
+
+.signal-button.selected .signal-checkbox {
+  background-color: var(--midnight-black);
+  border-color: var(--midnight-black);
+  color: var(--tvvc-teal);
+}
+
+.continue-button {
+  padding: var(--spacing-md);
+  background-color: var(--tvvc-teal);
+  color: var(--midnight-black);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: var(--spacing-md);
+}
+
+.continue-button:hover:not(:disabled) {
+  background-color: var(--deep-teal);
+  transform: translateY(-2px);
+}
+
+.continue-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .signals-grid {
+    grid-template-columns: 1fr;
+  }
+}

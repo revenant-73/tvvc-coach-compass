@@ -49,7 +49,7 @@ export const Home: React.FC = () => {
             <span className="text-teal font-semibold">3. Get</span> constraint suggestions
           </li>
           <li>
-            <span className="text-teal font-semibold">4. Commit</span> for 4 minutes
+            <span className="text-teal font-semibold">4. Commit</span> for 10 minutes
           </li>
           <li>
             <span className="text-teal font-semibold">5. Reflect</span> and save

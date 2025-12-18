@@ -85,7 +85,7 @@ export const Focus: React.FC = () => {
     return (
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-teal mb-6">Commit to These Constraints</h2>
-        <Timer initialSeconds={240} onComplete={handleTimerComplete} />
+        <Timer initialSeconds={600} onComplete={handleTimerComplete} />
 
         <div className="space-y-2">
           <button
@@ -119,7 +119,7 @@ export const Focus: React.FC = () => {
           onClick={handleStartTimer}
           className="w-full px-4 py-3 bg-teal text-midnight rounded-lg font-semibold hover:bg-teal-dark"
         >
-          Start 4-Min Commit
+          Start 10-Min Commit
         </button>
         <button
           onClick={handleNewFocus}

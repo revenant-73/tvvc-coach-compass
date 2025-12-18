@@ -5,7 +5,7 @@ interface TimerProps {
   onComplete?: () => void
 }
 
-export const Timer: React.FC<TimerProps> = ({ initialSeconds = 240, onComplete }) => {
+export const Timer: React.FC<TimerProps> = ({ initialSeconds = 600, onComplete }) => {
   const [seconds, setSeconds] = useState(initialSeconds)
   const [isRunning, setIsRunning] = useState(false)
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FocusCardData, ConstraintMove, DesiredResult } from '../types'
+import { FocusCardData } from '../types'
 import { desiredResults } from '../data/desiredResults'
 
 interface FocusCardProps {

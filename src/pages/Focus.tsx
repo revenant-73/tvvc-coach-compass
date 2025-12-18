@@ -7,7 +7,7 @@ import { getTuningConstraints } from '../logic/buildFocusCard'
 
 export const Focus: React.FC = () => {
   const navigate = useNavigate()
-  const { focusCard, setFocusCard, reset } = useSession()
+  const { focusCard, reset } = useSession()
   const [showTimer, setShowTimer] = useState(false)
   const [tunedConstraints, setTunedConstraints] = useState<any[] | null>(null)
   const [tuneType, setTuneType] = useState<'too_easy' | 'too_hard' | 'too_chaotic' | null>(null)

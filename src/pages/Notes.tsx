@@ -4,7 +4,6 @@ import { useSession } from '../state/SessionContext'
 import { SavedNote } from '../types'
 import { desiredResults } from '../data/desiredResults'
 import { problemSignals } from '../data/problemSignals'
-import { constraintMoves } from '../data/constraintMoves'
 
 export const Notes: React.FC = () => {
   const navigate = useNavigate()

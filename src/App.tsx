@@ -1,4 +1,3 @@
-import React from 'react'
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { SessionProvider } from './state/SessionContext'
 import { AppShell } from './components/AppShell'

@@ -8,7 +8,7 @@ interface StepperProps {
 export const Stepper: React.FC<StepperProps> = ({ steps, currentStep }) => {
   return (
     <div className="flex items-center justify-between mb-6">
-      {steps.map((step, index) => (
+      {steps.map((_step, index) => (
         <div key={index} className="flex items-center">
           <div
             className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${

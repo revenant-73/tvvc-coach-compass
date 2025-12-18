@@ -17,7 +17,7 @@ export const SelectProblemSignals: React.FC = () => {
     setFocusCard
   } = useSession()
 
-  if (!systemState || !format || !desiredResult) {
+  if (!systemState || !format) {
     navigate('/')
     return null
   }
@@ -31,7 +31,13 @@ export const SelectProblemSignals: React.FC = () => {
   }
 
   const handleContinue = () => {
-    const card = buildFocusCard(systemState, format, desiredResult, selectedSignals)
+    const card = buildFocusCard(systemState, format, desiredResult || '', selectedSignals)
+    setFocusCard(card)
+    navigate('/focus')
+  }
+
+  const handleSkip = () => {
+    const card = buildFocusCard(systemState, format, desiredResult || '', selectedSignals)
     setFocusCard(card)
     navigate('/focus')
   }
@@ -62,12 +68,20 @@ export const SelectProblemSignals: React.FC = () => {
           ))}
         </div>
 
-        <button
-          onClick={handleContinue}
-          className="w-full px-4 py-3 bg-teal text-midnight rounded-lg font-semibold hover:bg-teal-dark transition-all"
-        >
-          See Focus Card
-        </button>
+        <div className="space-y-2">
+          <button
+            onClick={handleContinue}
+            className="w-full px-4 py-3 bg-teal text-midnight rounded-lg font-semibold hover:bg-teal-dark transition-all"
+          >
+            See Focus Card
+          </button>
+          <button
+            onClick={handleSkip}
+            className="w-full px-4 py-2 bg-charcoal text-text-primary border border-divider rounded-lg hover:border-teal transition-all"
+          >
+            Skip This Step
+          </button>
+        </div>
       </div>
     </div>
   )

@@ -19,6 +19,10 @@ export const SelectDesiredResult: React.FC = () => {
     navigate('/signals')
   }
 
+  const handleSkip = () => {
+    navigate('/signals')
+  }
+
   return (
     <div className="space-y-6">
       <Stepper steps={['State', 'Format', 'Result', 'Signals', 'Focus']} currentStep={2} />
@@ -42,6 +46,13 @@ export const SelectDesiredResult: React.FC = () => {
             </CardButton>
           ))}
         </div>
+
+        <button
+          onClick={handleSkip}
+          className="w-full mt-4 px-4 py-2 bg-charcoal text-text-primary border border-divider rounded-lg hover:border-teal transition-all"
+        >
+          Skip This Step
+        </button>
       </div>
     </div>
   )

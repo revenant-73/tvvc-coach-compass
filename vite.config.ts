@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/constraint-compass/',
+  base: '/tvvc-coach-compass/',
   server: {
     open: true
   }
